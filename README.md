@@ -1,3 +1,5 @@
+We forked postgres-py because they refused to fix [#340](https://github.com/supabase/postgrest-py/issues/340) (maybe_single throws an error when 0 rows are returned)
+
 # postgrest-py
 
 [PostgREST](https://postgrest.org) client for Python. This library provides an "ORM-like" interface to PostgREST.
