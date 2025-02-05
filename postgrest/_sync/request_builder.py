@@ -137,7 +137,7 @@ class SyncMaybeSingleRequestBuilder(SyncSingleRequestBuilder[_ReturnT]):
         try:
             r = SyncSingleRequestBuilder[_ReturnT].execute(self)
         except APIError as e:
-            if e.details and "The result contains 0 rows" in e.details:
+            if e.details and "contains 0 rows" in e.details:
                 return None
         if not r:
             raise APIError(
