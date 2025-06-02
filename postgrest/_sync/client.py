@@ -15,8 +15,8 @@ from ..utils import SyncClient
 from ..version import __version__
 from .request_builder import SyncRequestBuilder, SyncRPCFilterRequestBuilder
 
-_TableT = Dict[str, Any]
-
+# _TableT = Dict[str, Any]
+_TableT = Any
 
 class SyncPostgrestClient(BasePostgrestClient):
     """PostgREST client."""

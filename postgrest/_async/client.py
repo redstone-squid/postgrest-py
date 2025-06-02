@@ -15,7 +15,8 @@ from ..utils import AsyncClient
 from ..version import __version__
 from .request_builder import AsyncRequestBuilder, AsyncRPCFilterRequestBuilder
 
-_TableT = Dict[str, Any]
+# _TableT = Dict[str, Any]
+_TableT = Any
 
 
 class AsyncPostgrestClient(BasePostgrestClient):
